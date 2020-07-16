@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "149600545461",
+    "firebase_url": "https://mvpcleanproject.firebaseio.com",
+    "project_id": "mvpcleanproject",
+    "storage_bucket": "mvpcleanproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149600545461:android:ed82d8a11074f67800ecfc",
+        "android_client_info": {
+          "package_name": "com.example.mvpcleanproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149600545461-v2oohtmcrgmidmh5qa4qha9gp2lpe0av.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mvpcleanproject",
+            "certificate_hash": "a63b8848feb06913d1c55aa266ca20b6133b2084"
+          }
+        },
+        {
+          "client_id": "149600545461-luf4ncv96hoiuh9v1i9lfoaqqsa7b1os.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4_tocvcjYpnegEwPsPB8HjTzXxj6rIec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149600545461-luf4ncv96hoiuh9v1i9lfoaqqsa7b1os.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
