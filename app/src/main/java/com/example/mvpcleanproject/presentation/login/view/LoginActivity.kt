@@ -9,6 +9,7 @@ import com.example.mvpcleanproject.domain.interactor.loginInteractor.SignInInter
 import com.example.mvpcleanproject.presentation.login.LoginContract
 import com.example.mvpcleanproject.presentation.login.presenter.LoginPresenter
 import com.example.mvpcleanproject.presentation.main.view.MainActivity
+import com.example.mvpcleanproject.presentation.registrer.view.SignUpActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : BaseActivity(), LoginContract.LoginView {
@@ -19,6 +20,10 @@ class LoginActivity : BaseActivity(), LoginContract.LoginView {
         presenter.attachView(this)
         btnSignIn.setOnClickListener {
             signIn()
+        }
+
+        txtRegister.setOnClickListener {
+            navigateToRegister()
         }
     }
 
@@ -50,6 +55,10 @@ class LoginActivity : BaseActivity(), LoginContract.LoginView {
         val intent = Intent(this, MainActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(intent)
+    }
+
+    override fun navigateToRegister() {
+        startActivity(Intent(this, SignUpActivity::class.java))
     }
 
     override fun onDetachedFromWindow() {

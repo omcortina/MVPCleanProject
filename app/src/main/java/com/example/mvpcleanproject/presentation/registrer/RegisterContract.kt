@@ -3,6 +3,7 @@ package com.example.mvpcleanproject.presentation.registrer
 interface RegisterContract {
     interface RegisterView{
         fun navigateToMain()
+
         fun signUp()
         fun showProgressBar()
         fun hideProgressBar()
