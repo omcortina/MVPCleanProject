@@ -1,4 +1,4 @@
-package com.example.mvpcleanproject.domain.interactor.registerInteractor
+package com.example.mvpcleanproject.domain.interactor.auth.registerInteractor
 
 interface SignUpInteractor {
     interface RegisterCallback {

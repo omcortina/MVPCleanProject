@@ -1,14 +1,14 @@
-package com.example.mvpcleanproject.presentation.registrer.view
+package com.example.mvpcleanproject.presentation.auth.registrer.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.example.mvpcleanproject.R
 import com.example.mvpcleanproject.base.BaseActivity
-import com.example.mvpcleanproject.domain.interactor.registerInteractor.SignUpInteractorImpl
+import com.example.mvpcleanproject.domain.interactor.auth.registerInteractor.SignUpInteractorImpl
 import com.example.mvpcleanproject.presentation.main.view.MainActivity
-import com.example.mvpcleanproject.presentation.registrer.RegisterContract
-import com.example.mvpcleanproject.presentation.registrer.presenter.SignUpPresenter
+import com.example.mvpcleanproject.presentation.auth.registrer.RegisterContract
+import com.example.mvpcleanproject.presentation.auth.registrer.presenter.SignUpPresenter
 import kotlinx.android.synthetic.main.activity_register.*
 
 class SignUpActivity : BaseActivity(), RegisterContract.RegisterView {

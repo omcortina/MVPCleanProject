@@ -1,4 +1,4 @@
-package com.example.mvpcleanproject.presentation.registrer
+package com.example.mvpcleanproject.presentation.auth.registrer
 
 interface RegisterContract {
     interface RegisterView{
@@ -13,6 +13,7 @@ interface RegisterContract {
     interface RegisterPresenter{
         fun attachView(view: RegisterView)
         fun dettachView()
+
         fun isViewAttached(): Boolean
         fun checkEmptyName(fullname: String): Boolean
         fun checkValidEmail(email: String): Boolean

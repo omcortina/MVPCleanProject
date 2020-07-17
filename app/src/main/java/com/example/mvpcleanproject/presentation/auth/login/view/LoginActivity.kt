@@ -1,15 +1,15 @@
-package com.example.mvpcleanproject.presentation.login.view
+package com.example.mvpcleanproject.presentation.auth.login.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.example.mvpcleanproject.R
 import com.example.mvpcleanproject.base.BaseActivity
-import com.example.mvpcleanproject.domain.interactor.loginInteractor.SignInInteractorImpl
-import com.example.mvpcleanproject.presentation.login.LoginContract
-import com.example.mvpcleanproject.presentation.login.presenter.LoginPresenter
+import com.example.mvpcleanproject.domain.interactor.auth.loginInteractor.SignInInteractorImpl
+import com.example.mvpcleanproject.presentation.auth.login.LoginContract
+import com.example.mvpcleanproject.presentation.auth.login.presenter.LoginPresenter
 import com.example.mvpcleanproject.presentation.main.view.MainActivity
-import com.example.mvpcleanproject.presentation.registrer.view.SignUpActivity
+import com.example.mvpcleanproject.presentation.auth.registrer.view.SignUpActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : BaseActivity(), LoginContract.LoginView {
@@ -31,7 +31,7 @@ class LoginActivity : BaseActivity(), LoginContract.LoginView {
         return R.layout.activity_login
     }
 
-    override fun showError(msgError: String) {
+    override fun showError(msgError: String?) {
         toast(this, msgError)
     }
 
@@ -64,10 +64,12 @@ class LoginActivity : BaseActivity(), LoginContract.LoginView {
     override fun onDetachedFromWindow() {
         super.onDetachedFromWindow()
         presenter.dettachView()
+        presenter.dettachJob()
     }
 
     override fun onDestroy() {
         super.onDestroy()
         presenter.dettachView()
+        presenter.dettachJob()
     }
 }

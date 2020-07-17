@@ -1,4 +1,4 @@
-package com.example.mvpcleanproject.domain.interactor.registerInteractor
+package com.example.mvpcleanproject.domain.interactor.auth.registerInteractor
 
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.UserProfileChangeRequest

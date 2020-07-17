@@ -1,8 +1,8 @@
-package com.example.mvpcleanproject.presentation.registrer.presenter
+package com.example.mvpcleanproject.presentation.auth.registrer.presenter
 
 import androidx.core.util.PatternsCompat
-import com.example.mvpcleanproject.domain.interactor.registerInteractor.SignUpInteractor
-import com.example.mvpcleanproject.presentation.registrer.RegisterContract
+import com.example.mvpcleanproject.domain.interactor.auth.registerInteractor.SignUpInteractor
+import com.example.mvpcleanproject.presentation.auth.registrer.RegisterContract
 
 class SignUpPresenter(signUpInteractor: SignUpInteractor): RegisterContract.RegisterPresenter {
     var view: RegisterContract.RegisterView? = null
